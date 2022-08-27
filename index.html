@@ -2,7 +2,6 @@
 xmlns:o="urn:schemas-microsoft-com:office:office"
 xmlns:x="urn:schemas-microsoft-com:office:excel"
 xmlns="http://www.w3.org/TR/REC-html40">
-
 <head>
 <meta name="Excel Workbook Frameset">
 <meta http-equiv=Content-Type content="text/html; charset=windows-1252">
@@ -11,18 +10,12 @@ xmlns="http://www.w3.org/TR/REC-html40">
 <link rel=File-List href="index_files/filelist.xml">
 <![if !supportTabStrip]>
 <link id="shLink" href="index_files/sheet001.html">
-
 <link id="shLink">
-
 <script language="JavaScript">
 <!--
  var c_lTabs=1;
-
  var c_rgszSh=new Array(c_lTabs);
  c_rgszSh[0] = "Databases";
-
-
-
  var c_rgszClr=new Array(8);
  c_rgszClr[0]="window";
  c_rgszClr[1]="buttonface";
@@ -32,10 +25,8 @@ xmlns="http://www.w3.org/TR/REC-html40">
  c_rgszClr[5]="threedhighlight";
  c_rgszClr[6]="threeddarkshadow";
  c_rgszClr[7]="threedshadow";
-
  var g_iShCur;
  var g_rglTabX=new Array(c_lTabs);
-
 function fnGetIEVer()
 {
  var ua=window.navigator.userAgent
@@ -45,7 +36,6 @@ function fnGetIEVer()
  else
   return 0;
 }
-
 function fnBuildFrameset()
 {
  var szHTML="<frameset rows=\"*,18\" border=0 width=0 frameborder=no framespacing=0>"+
@@ -54,16 +44,13 @@ function fnBuildFrameset()
   "<frame src=\"\" name=\"frScroll\" marginwidth=0 marginheight=0 scrolling=no>"+
   "<frame src=\"\" name=\"frTabs\" marginwidth=0 marginheight=0 scrolling=no>"+
   "</frameset></frameset><plaintext>";
-
  with (document) {
   open("text/html","replace");
   write(szHTML);
   close();
  }
-
  fnBuildTabStrip();
 }
-
 function fnBuildTabStrip()
 {
  var szHTML=
@@ -83,7 +70,6 @@ function fnBuildTabStrip()
   write(szHTML);
   close();
  }
-
  szHTML =
   "<html><head>"+
   "<style>A:link,A:visited,A:active {text-decoration:none;"+"color:"+c_rgszClr[3]+";}"+
@@ -91,18 +77,13 @@ function fnBuildTabStrip()
   ".clBorder {background:"+c_rgszClr[2]+";font:1pt;}"+
   "</style></head><body onload=\"parent.fnInit();\" onselectstart=\"event.returnValue=false;\" ondragstart=\"event.returnValue=false;\" bgcolor="+c_rgszClr[4]+
   " topmargin=0 leftmargin=0><table id=tbTabs cellpadding=0 cellspacing=0>";
-
  var iCellCount=(c_lTabs+1)*2;
-
  var i;
  for (i=0;i<iCellCount;i+=2)
   szHTML+="<col width=1><col>";
-
  var iRow;
  for (iRow=0;iRow<6;iRow++) {
-
   szHTML+="<tr>";
-
   if (iRow==5)
    szHTML+="<td colspan="+iCellCount+"></td>";
   else {
@@ -132,7 +113,6 @@ function fnBuildTabStrip()
   }
   szHTML+="</tr>";
  }
-
  szHTML+="</table></body></html>";
  with (frames['frTabs'].document) {
   open("text/html","replace");
@@ -141,7 +121,6 @@ function fnBuildTabStrip()
   close();
  }
 }
-
 function fnInit()
 {
  g_rglTabX[0]=0;
@@ -150,17 +129,14 @@ function fnInit()
   with (frames['frTabs'].document.all.tbTabs.rows[1].cells[fnTabToCol(i-1)])
    g_rglTabX[i]=offsetLeft+offsetWidth-6;
 }
-
 function fnTabToCol(iTab)
 {
  return 2*iTab+1;
 }
-
 function fnNextTab(fDir)
 {
  var iNextTab=-1;
  var i;
-
  with (frames['frTabs'].document.body) {
   if (fDir==0) {
    if (scrollLeft>0) {
@@ -178,7 +154,6 @@ function fnNextTab(fDir)
  }
  return iNextTab;
 }
-
 function fnScrollTabs(fDir)
 {
  var iNextTab=fnNextTab(fDir);
@@ -189,7 +164,6 @@ function fnScrollTabs(fDir)
  } else
   return false;
 }
-
 function fnFastScrollTabs(fDir)
 {
  if (c_lTabs>16)
@@ -197,7 +171,6 @@ function fnFastScrollTabs(fDir)
  else
   if (fnScrollTabs(fDir)>0) window.setTimeout("fnFastScrollTabs("+fDir+");",5);
 }
-
 function fnSetTabProps(iTab,fActive)
 {
  var iCol=fnTabToCol(iTab);
@@ -238,17 +211,14 @@ function fnSetTabProps(iTab,fActive)
   }
  }
 }
-
 function fnMouseOverScroll(iCtl)
 {
  frames['frScroll'].document.all.tdScroll[iCtl].style.color=c_rgszClr[7];
 }
-
 function fnMouseOutScroll(iCtl)
 {
  frames['frScroll'].document.all.tdScroll[iCtl].style.color=c_rgszClr[6];
 }
-
 function fnMouseOverTab(iTab)
 {
  if (iTab!=g_iShCur) {
@@ -258,7 +228,6 @@ function fnMouseOverTab(iTab)
   }
  }
 }
-
 function fnMouseOutTab(iTab)
 {
  if (iTab>=0) {
@@ -278,7 +247,6 @@ function fnMouseOutTab(iTab)
   }
  }
 }
-
 function fnSetActiveSheet(iSh)
 {
  if (iSh!=g_iShCur) {
@@ -287,7 +255,6 @@ function fnSetActiveSheet(iSh)
   g_iShCur=iSh;
  }
 }
-
  window.g_iIEVer=fnGetIEVer();
  if (window.g_iIEVer>=4)
   fnBuildFrameset();
@@ -311,9 +278,10 @@ function fnSetActiveSheet(iSh)
  </x:ExcelWorkbook>
 </xml><![endif]-->
 <title>BlackMan666Bot</title>
+<meta name="description" content="BlackMan666Bot is a database marketplace with exclusive breaches and leaks." />
+<meta name="keywords" content="hacker, hacking, breach, breaches, breached, leak, leaks, leaked, database, databases, combolist, combolists, cyber, cyber security, telegram, channel, security, b2b, marketplace" />
 <link rel="icon" type="image/png" href="/logo.png" sizes="192x192">
 </head>
-
 <frameset rows="*,39" border=0 width=0 frameborder=no framespacing=0>
  <frame src="index_files/sheet001.html" name="frSheet">
  <frame src="index_files/tabstrip.html" name="frTabs" marginwidth=0 marginheight=0>
