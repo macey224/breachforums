@@ -45,6 +45,18 @@
       background-color: #333333;
       color: #ffffff;
     }
+
+    #scroll-down-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #0078d7;
+      color: #000;
+      padding: 10px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+    }
   </style>
   <link rel="icon" type="image/png" href="logo.png" sizes="192x192">
 </head>
@@ -5856,6 +5868,15 @@
         style="text-decoration: none">breachera.com/pgp.txt</a></p>
     <p>Tor: Soon..</p>
   </div>
+  <button id="scroll-down-button" onclick="scrollToBottom()">Contact</button> 
+  <script>
+    function scrollToBottom() {
+      window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: 'smooth'
+      });
+    }
+  </script>
 </body>
 
 </html>
