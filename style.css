@@ -53,5 +53,5 @@ h1 {
 }
 
 .dataTables_wrapper .dataTables_length select{
-    background-color: #1a1a1a;
+    background-color: #1a1a1a !important;
 }
