@@ -1,10 +1,3 @@
-function scrollToBottom() {
-    window.scrollTo({
-        top: document.body.scrollHeight,
-        behavior: 'smooth'
-    });
-}
-
 $(document).ready( function() {
     $('#data-table').dataTable({
         "order": [],
