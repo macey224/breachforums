@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #ffffff;
+}
+
+th,
+td {
+    border: 1px solid #333333;
+    text-align: left;
+    padding: 8px;
+    background: #000;
+}
+
+th {
+    background-color: #333333;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 48px;
+}
+
+#contact-info {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #333333;
+    color: #ffffff;
+}
+
+#scroll-down-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0078d7;
+    color: #000;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.dataTables_filter input,label {
+    color: #fff;
+}
