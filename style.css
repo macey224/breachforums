@@ -2,13 +2,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 20px;
     background-color: #1a1a1a;
-    color: #ffffff;
+    color: #fff;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    color: #ffffff;
+    color: #fff;
 }
 
 a {
@@ -19,19 +19,19 @@ a {
 
 th,
 td {
-    border: 1px solid #333333;
+    border: 1px solid #333;
     text-align: left;
     padding: 8px;
     background: #000;
 }
 
 th {
-    background-color: #333333;
+    background-color: #333;
 }
 
 h1 {
     text-align: center;
-    color: #ffffff;
+    color: #fff;
     font-size: 48px;
     margin: 0;
 }
@@ -39,8 +39,8 @@ h1 {
 #contact-info {
     margin-top: 20px;
     padding: 20px;
-    background-color: #333333;
-    color: #ffffff;
+    background-color: #333;
+    color: #fff;
 }
 
 #scroll-down-button {
@@ -52,7 +52,7 @@ h1 {
     padding: 10px;
     cursor: pointer;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
 }
 
 .dataTables_filter input,
