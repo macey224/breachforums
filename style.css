@@ -27,6 +27,7 @@ h1 {
     text-align: center;
     color: #ffffff;
     font-size: 48px;
+    margin: 0;
 }
 
 #contact-info {
@@ -48,10 +49,15 @@ h1 {
     border-radius: 5px;
 }
 
-.dataTables_filter input,label {
+.dataTables_filter input,
+label {
     color: #fff;
 }
 
-.dataTables_wrapper .dataTables_length select{
+.dataTables_filter {
+    margin-bottom: 10px;
+}
+
+.dataTables_wrapper .dataTables_length select {
     background-color: #1a1a1a !important;
 }
