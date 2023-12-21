@@ -44,7 +44,7 @@ jQuery.extend({
                 wordNode.parentNode.replaceChild(highlight, wordNode);
                 return 1; //skip added node in parent
             }
-        } else if ((node.nodeType === 1 && node.childNodes) && // only element nodes that have children
+        } else if ((node.nodeType === 1 && node.childNodes) &&
             !/(script|style)/i.test(node.tagName) &&
             !(node.tagName === nodeName.toUpperCase() && node.className === className)) {
             for (var i = 0; i < node.childNodes.length; i++) {
