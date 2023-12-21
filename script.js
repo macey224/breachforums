@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var table = $('#data-table').dataTable({
+    var table = $('#data-table').DataTable({
         "order": [],
         aLengthMenu: [
             [25, 50, 100, 200, -1],
@@ -8,6 +8,7 @@ $(document).ready(function () {
         iDisplayLength: -1,
         searchHighlight: true
     });
+    $('div.dataTables_filter input', table.table().container()).focus();
     table.on('draw', function () {
         var body = $(table.table().body());
 
