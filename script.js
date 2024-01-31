@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var rows = table.getElementsByTagName('tbody')[0].getElementsByTagName('tr');
 
         for (var i = 0; i < rows.length; i++) {
-            var cell = rows[i].getElementsByTagName('td')[1];
+            var cell = rows[i].getElementsByTagName('td')[2];
             var number = parseInt(cell.textContent.replace(/,/g, ''), 10);
             cell.textContent = number.toLocaleString();
         }
