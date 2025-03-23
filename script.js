@@ -8,7 +8,7 @@ $(document).ready(function () {
         iDisplayLength: -1,
         searchHighlight: true
     });
-    $('div.dt-search input', table.table().container()).focus();
+    $('div.dataTables_filter input', table.table().container()).focus();
     table.on('draw', function () {
         var body = $(table.table().body());
 
