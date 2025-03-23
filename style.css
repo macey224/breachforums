@@ -11,6 +11,10 @@ table {
     color: #fff;
 }
 
+.red {
+    background-color: red;
+}
+
 table.dataTable span.highlight {
     background-color: blue;
     border-radius: 0.28571429rem;
