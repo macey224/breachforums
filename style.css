@@ -9,6 +9,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     color: #fff;
+    border: 1;
 }
 
 .red {
