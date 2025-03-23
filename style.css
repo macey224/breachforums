@@ -46,6 +46,12 @@ h1 {
     margin: 0;
 }
 
+h3 {
+    text-align: center;
+    color: #fff;
+    margin: 0;
+}
+
 #contact-info {
     margin-top: 20px;
     padding: 20px;
